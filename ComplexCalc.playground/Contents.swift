@@ -114,7 +114,12 @@ let calc = Calculator()
 //: Keep in mind that writing new tests may reveal ambiguity in the specification above--if that's the case, document the ambiguity, declare what you think *should* happen, and write the test to test for it.
 
 // ===== Your tests go here
-
+let p5 = (-5, -5)
+let p6 = (-3, -3)
+calc.add(lhs: p5, rhs: p6) == (-8, -8)
+let pd3 = ["x": -5, "y": -5]
+let pd4 = ["x": -3, "y": -3]
+calc.add(lhs: pd3, rhs: pd4) == ["x": -8, "y": -8]
 //: ---
 //: ## Test code block
 //: Do not modify the code in this section
